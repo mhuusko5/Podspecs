@@ -17,9 +17,4 @@ Pod::Spec.new do |s|
   s.library      = 'icucore', 'c++'
   
   s.vendored_frameworks = 'Firebase.framework'
-  
-  s.pod_target_xcconfig = {
-      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Firebase',
-      'OTHER_LDFLAGS'          => '$(inherited) -undefined dynamic_lookup'
-  }
 end
