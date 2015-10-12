@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'Spotify-iOS-SDK'
   s.module_name = 'Spotify'
   s.summary = 'The new Spotify iOS SDK.'
-  s.version = '0.11.0'
+  s.version = '0.11.1'
 
   s.license = { :type => 'proprietary', :text => 'https://developer.spotify.com/developer-terms-of-use/' }
   s.author = { 'Spotify' => 'https://developer.spotify.com/' }
@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.framework = 'Foundation', 'AVFoundation'
 
   s.pod_target_xcconfig = {
+    'ENABLE_BITCODE' => 'NO',
     'OTHER_LDFLAGS' => '$(inherited) -ObjC'
   }
 
