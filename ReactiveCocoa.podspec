@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ReactiveCocoa'
-  s.version = '4.0.3-alpha-1'
+  s.version = '4.0.0-alpha-2'
 
   s.summary = 'A framework for composing and transforming streams of values.'
   s.description = <<-EOS
@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => 'https://github.com/ReactiveCocoa/ReactiveCocoa.git',
-    :tag => 'v4.0-alpha.1'
+    :tag => 'v4.0.0-alpha.2'
   }
 
   s.framework = 'Foundation'
-  s.dependency 'Result', '~> 0.6-beta.1'
+  s.dependency 'Result', '~> 0.6-beta.3'
   s.default_subspec = 'UI'
 
   s.subspec 'no-arc' do |ss|
