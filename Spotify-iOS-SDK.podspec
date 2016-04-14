@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
   s.name = 'Spotify-iOS-SDK'
   s.module_name = 'Spotify'
   s.summary = 'The new Spotify iOS SDK.'
-  s.version = '0.14.0'
-  s.source = { :http => 'https://github.com/spotify/ios-sdk/releases/download/beta-14/ios-sdk-deploy.zip' }
+  s.version = '0.15.0'
+  s.source = { :http => 'https://github.com/spotify/ios-sdk/releases/download/beta-15/ios-sdk-deploy.zip' }
 
   s.license = { :type => 'Proprietary', :text => 'https://developer.spotify.com/developer-terms-of-use/' }
   s.author = { 'Spotify' => 'https://developer.spotify.com/' }
