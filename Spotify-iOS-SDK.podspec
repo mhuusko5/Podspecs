@@ -19,6 +19,11 @@ Pod::Spec.new do |s|
     'OTHER_LDFLAGS' => '$(inherited) -ObjC'
   }
 
+  s.user_target_xcconfig = {
+    'LIBRARY_SEARCH_PATHS' => '$(inherited) "$(PODS_ROOT)/Spotify-iOS-SDK"',
+    'OTHER_LDFLAGS' => '-l"Spotify"'
+  }
+
   s.preserve_paths = 'ios-sdk-deploy-beta-16/Spotify.framework/Spotify'
   s.prepare_command = 'touch Empty.m && cp ios-sdk-deploy-beta-16/Spotify.framework/Spotify libSpotify.a && cp ios-sdk-deploy-beta-16/Spotify.framework/Headers/* .'
 
