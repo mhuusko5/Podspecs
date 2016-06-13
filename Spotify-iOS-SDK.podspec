@@ -10,13 +10,18 @@ Pod::Spec.new do |s|
   s.homepage = 'https://developer.spotify.com/technologies/spotify-ios-sdk/'
 
   s.platform = :ios
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '7.1'
 
   s.requires_arc = true
   s.framework = 'Foundation', 'AVFoundation'
 
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '$(inherited) -ObjC'
+  }
+
+  s.user_target_xcconfig = {
+    'LIBRARY_SEARCH_PATHS' => '$(inherited) "$(PODS_ROOT)/Spotify-iOS-SDK"',
+    'OTHER_LDFLAGS' => '-l"Spotify"'
   }
 
   s.preserve_paths = 'ios-sdk-deploy-beta-16/Spotify.framework/Spotify'
