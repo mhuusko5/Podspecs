@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://developer.spotify.com/technologies/spotify-ios-sdk/'
 
   s.platform = :ios
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '7.1'
 
   s.requires_arc = true
   s.framework = 'Foundation', 'AVFoundation'
