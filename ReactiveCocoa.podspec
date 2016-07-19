@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ReactiveCocoa'
-  s.version = '4.2.2-swift2.2'
+  s.version = '4.2.2'
   s.summary = 'A framework for composing and transforming streams of values.'
   s.description = <<-EOS
     ReactiveCocoa (RAC) is an Objective-C framework for Functional Reactive Programming.
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.source = {
     :git => 'https://github.com/ReactiveCocoa/ReactiveCocoa.git',
-    :tag => "v4.2.2"
+    :tag => "v#{s.version}"
   }
   s.dependency 'Result', '~> 2.0'
   s.framework = 'Foundation'
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
     '**/RACEmpty*.h'
   ]
 
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
   s.source_files = 'ReactiveCocoa/**/*.{d,h,m,swift}'
 
   # This is a little backwards, but it's basically easier to list the files we want to exlude
