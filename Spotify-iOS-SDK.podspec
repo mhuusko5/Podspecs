@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
   s.name = 'Spotify-iOS-SDK'
   s.module_name = 'Spotify'
   s.summary = 'The new Spotify iOS SDK.'
-  s.version = '0.20.0'
-  s.source = { :http => 'https://github.com/spotify/ios-sdk/archive/beta-20.zip' }
+  s.version = '0.21.0'
+  s.source = { :http => 'https://github.com/spotify/ios-sdk/archive/beta-21.zip' }
 
   s.license = { :type => 'Proprietary', :text => 'https://developer.spotify.com/developer-terms-of-use/' }
   s.author = { 'Spotify' => 'https://developer.spotify.com/' }
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
     'OTHER_LDFLAGS' => '-l"Spotify"'
   }
 
-  s.preserve_paths = 'ios-sdk-beta-20/Spotify.framework/Spotify'
-  s.prepare_command = 'touch Empty.m && cp ios-sdk-beta-20/Spotify.framework/Spotify libSpotify.a && cp ios-sdk-beta-20/Spotify.framework/Headers/* .'
+  s.preserve_paths = 'ios-sdk-beta-21/Spotify.framework/Spotify'
+  s.prepare_command = 'touch Empty.m && cp ios-sdk-beta-21/Spotify.framework/Spotify libSpotify.a && cp ios-sdk-beta-21/Spotify.framework/Headers/* .'
 
   s.source_files = 'Empty.m', '*.h'
   s.public_header_files = '*.h'
