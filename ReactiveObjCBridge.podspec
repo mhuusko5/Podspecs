@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.framework = 'Foundation'
 
   s.dependency 'ReactiveSwift', '~> 1.0.0-alpha.1'
-  s.dependency 'ReactiveObjC', '~> 1.0.0-alpha.1'
+  s.dependency 'ReactiveObjC', '~> 1.0'
 
   s.source_files = 'ReactiveObjCBridge/*.{swift,h,m}'
 end
