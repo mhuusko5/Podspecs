@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   
   s.source = {
     :git => 'https://github.com/ReactiveCocoa/ReactiveObjCBridge.git',
-    :commit => '738bfb0c0b0afd8ea8949ef4412ff9b8cd1cc1ca'
+    :commit => 'aa9fb48'
     # :tag => 'v#{s.version}'
   }
 
