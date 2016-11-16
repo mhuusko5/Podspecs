@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   
   s.source = {
     :git => 'https://github.com/ReactiveCocoa/ReactiveObjCBridge.git',
-    :commit => '738bfb0c0b0afd8ea8949ef4412ff9b8cd1cc1ca'
+    :commit => 'aa9fb48'
     # :tag => 'v#{s.version}'
   }
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.framework = 'Foundation'
 
   s.dependency 'ReactiveSwift', '~> 1.0.0-alpha.1'
-  s.dependency 'ReactiveObjC', '~> 1.0'
+  s.dependency 'ReactiveObjC', '~> 2.0'
 
   s.source_files = 'ReactiveObjCBridge/*.{swift,h,m}'
 end
